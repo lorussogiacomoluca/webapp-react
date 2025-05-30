@@ -3,6 +3,7 @@ import { useNavigate, useParams } from "react-router-dom";
 
 import filmsArray from "../assets/data/filmsArray";
 import { useEffect } from "react";
+import RecensioneCard from "../components/RecensioneCard";
 
 const MovieDetail = () => {
   const { id } = useParams();
@@ -31,6 +32,13 @@ const MovieDetail = () => {
           <p>{selectedMovie.trama}</p>
           <p>{selectedMovie.anno}</p>
           <p>{selectedMovie.regista}</p>
+        </div>
+      </div>
+      <div className="row">
+        <div className="col-12">
+          {selectedMovie.recensioni?.map((recensione, index) => (
+            <RecensioneCard key={index} recensione={recensione} />
+          ))}
         </div>
       </div>
     </>
