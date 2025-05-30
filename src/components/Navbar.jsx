@@ -6,7 +6,7 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-lg bg-primary">
       <div className="container-fluid">
         <NavLink className="navbar-brand" to="/">
-          <img src="./logo.svg" alt="Bootstrap" width="30" height="24" />
+          <img src="/logo.svg" alt="Bootstrap" width="30" height="24" />
           Movie Library
         </NavLink>
 
