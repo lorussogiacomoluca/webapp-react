@@ -49,3 +49,9 @@ Ora è il momento di prepararci al frontend della nostra Web App!
 - Copiate l'array dei film aggiungendo a ciascun oggetto un'array di recensioni
 - Trovate l'elemento all'interno dell'array da mostrare nella pagina attraverso l'**id** che avete passato come parametro
 - Mostratelo in pagina assieme alle sue **recensioni**
+
+---
+
+## 🔗 Integrazione SETUP Web App React
+
+Installate axios nell'app frontend e provate quindi ad effettuare una chiamata Ajax dalla home del progetto React, per ottenere la lista dei libri
