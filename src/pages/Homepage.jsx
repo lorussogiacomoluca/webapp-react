@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import filmsArray from "../assets/data/filmsArray";
+// import filmsArray from "../assets/data/filmsArray";
 import FilmCard from "../components/filmCard";
+import axios from "axios";
 
 const Homepage = () => {
   const [films, setFilms] = useState(filmsArray);
