@@ -52,6 +52,14 @@ Ora è il momento di prepararci al frontend della nostra Web App!
 
 ---
 
-## 🔗 Integrazione SETUP Web App React
+# ⚙️ Integrazione SETUP Web App React
 
-Installate axios nell'app frontend e provate quindi ad effettuare una chiamata Ajax dalla home del progetto React, per ottenere la lista dei libri
+📦 **Installate axios** nell'app **frontend** e provate quindi ad effettuare una **chiamata Ajax** dalla **home** del progetto React, per ottenere la **lista dei libri**.  
+📄 In utlimo effettuiamo una **chiamata AJAX** dalla **pagina di dettaglio** per ottenere il **dettaglio di un singolo film**, comprese le sue **recensioni**
+
+---
+
+## 🎁 BONUS
+
+- ✨ Realizzare una componente **StarsRating** in cui mostrare il voto delle recensioni (magari anche il voto medio, chissà....)
+- 🎨 Curare l’aspetto estetico della vostra ap

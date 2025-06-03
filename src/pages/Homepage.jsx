@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import filmsArray from "../assets/data/filmsArray";
 import FilmCard from "../components/filmCard";
 import axios from "axios";
 
