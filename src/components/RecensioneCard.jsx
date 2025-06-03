@@ -1,7 +1,7 @@
 import React from "react";
 
-const RecensioneCard = ({ recensione }) => {
-  const { nome, testo, voto } = recensione;
+const RecensioneCard = ({ review }) => {
+  const { name, text, vote } = review;
   return (
     <>
       <div className="row mt-4">
@@ -9,11 +9,11 @@ const RecensioneCard = ({ recensione }) => {
           <div className="card p-4">
             <div className="row d-flex justify-content-start">
               <div className="col-auto">
-                <h1>{voto}</h1>
+                <h1>{vote}</h1>
               </div>
               <div className="col">
-                <div className="card-text">{testo}</div>
-                <p>{nome}</p>
+                <div className="card-text">{text}</div>
+                <p>{name}</p>
               </div>
             </div>
           </div>

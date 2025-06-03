@@ -34,8 +34,8 @@ const MovieDetail = () => {
       </div>
       <div className="row">
         <div className="col-12">
-          {selectedMovie.recensioni?.map((recensione, index) => (
-            <RecensioneCard key={index} recensione={recensione} />
+          {selectedMovie.reviews?.map((review, index) => (
+            <RecensioneCard key={index} review={review} />
           ))}
         </div>
       </div>
