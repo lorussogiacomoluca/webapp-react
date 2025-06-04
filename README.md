@@ -63,3 +63,11 @@ Ora è il momento di prepararci al frontend della nostra Web App!
 
 - ✨ Realizzare una componente **StarsRating** in cui mostrare il voto delle recensioni (magari anche il voto medio, chissà....)
 - 🎨 Curare l’aspetto estetico della vostra ap
+
+---
+
+## 🚀 Aggiungere recensioni
+
+Creiamo un componente che contenga il form per le recensioni
+Inseriamo questo componente nella pagina di dettaglio del film
+All’invio del form, la nuova recensione viene salvata sul database e visualizzata nella pagina, in fondo alle altre
