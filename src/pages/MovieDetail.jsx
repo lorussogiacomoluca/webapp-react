@@ -6,6 +6,7 @@ import { useEffect } from "react";
 import RecensioneCard from "../components/RecensioneCard";
 import axios from "axios";
 import Rating from "../components/Rating";
+import PostReview from "../components/PostReview";
 
 const MovieDetail = () => {
   const { id } = useParams();
@@ -48,6 +49,11 @@ const MovieDetail = () => {
           {selectedMovie.reviews?.map((review, index) => (
             <RecensioneCard key={index} review={review} />
           ))}
+        </div>
+      </div>
+      <div className="row">
+        <div className="col-12">
+          <PostReview />
         </div>
       </div>
     </>
