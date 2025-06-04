@@ -53,7 +53,7 @@ const MovieDetail = () => {
       </div>
       <div className="row">
         <div className="col-12">
-          <PostReview />
+          <PostReview movie_id={id} fetchMovie={fetchMovie} />
         </div>
       </div>
     </>
