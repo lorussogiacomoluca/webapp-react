@@ -1,14 +1,21 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import FilmCard from "../components/filmCard";
 import axios from "axios";
+import GlobalContext from "../context/GlobalContext";
 
 const Homepage = () => {
   const [films, setFilms] = useState([]);
+  const { setIsLoading } = useContext(GlobalContext);
+
   const fecthMovies = () => {
+    setIsLoading(true);
     axios
       .get("http://localhost:3000/api/movies/")
       .then((resp) => {
         setFilms(resp.data);
+        setTimeout(() => {
+          setIsLoading(false);
+        }, 2000);
       })
       .catch((error) => {
         console.log(error);
