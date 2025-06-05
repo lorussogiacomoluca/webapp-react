@@ -1,8 +1,10 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 import Navbar from "../components/Navbar";
+import GlobalContext from "../context/GlobalContext";
 
 const DefaultLayout = () => {
+  const { isLoading } = useContext(GlobalContext);
   return (
     <>
       <header>
