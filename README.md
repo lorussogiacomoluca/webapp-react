@@ -71,3 +71,30 @@ Ora è il momento di prepararci al frontend della nostra Web App!
 Creiamo un componente che contenga il form per le recensioni
 Inseriamo questo componente nella pagina di dettaglio del film
 All’invio del form, la nuova recensione viene salvata sul database e visualizzata nella pagina, in fondo alle altre
+
+---
+
+## 🚀 Concludiamo migliorando l’esperienza sulla nostra SPA, inserendo un loader.
+
+### 🧱 creiamo un componente loader
+
+Questo componente deve poter apparire su qualunque pagina della nostra app.
+
+### 🌐 Creiamo e sfruttiamo un Context
+
+Per dare la possibilità ad ogni componente di attivare o disattivare il loader sulla propria pagina.
+
+---
+
+### 🎁 BONUS
+
+_(scegliete voi quale fare, non siete obbligati a farli tutti, potete farne solo alcuni)_:
+
+1. 🎨 Personalizziamo l’aspetto della nostra app col CSS
+2. 🔍 Aggiungere il filtraggio dei film nella homepage
+3. 🧾 Aggiungere la validazione della form delle recensioni mostrando un messaggio d'errore generico quando i dati inseriti non sono validi
+4. 🛑 Validazione dei campi della form singola: quando un utente sbaglia ad inserire un valore di un campo o non lo inserisce viene mostrato l'errore inerente quel campo
+
+---
+
+🎉 **Buon Lavoro e buon divertimento!**
