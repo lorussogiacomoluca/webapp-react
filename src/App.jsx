@@ -5,6 +5,8 @@ import MovieDetail from "./pages/MovieDetail";
 import GlobalContext from "./context/GlobalContext";
 
 function App() {
+  const [isLoading, setIsLoading] = useState(false);
+
   return (
     <>
       <GlobalContext.Provider>
