@@ -3,6 +3,7 @@ import DefaultLayout from "./layouts/DefaultLayout";
 import Homepage from "./pages/Homepage";
 import MovieDetail from "./pages/MovieDetail";
 import GlobalContext from "./context/GlobalContext";
+import { useContext, useState } from "react";
 
 function App() {
   const [isLoading, setIsLoading] = useState(false);
