@@ -10,7 +10,14 @@ const PostReview = ({ movie_id, fetchMovie }) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
-
+  const validateForm = () => {
+    if (formData.name === "" || formData.text === "" || formData.vote === "") {
+      return false;
+    }
+    if (isNaN(formData.vote) || formData.vote < 0 || formData.vote > 5) {
+      return false;
+    }
+  };
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
