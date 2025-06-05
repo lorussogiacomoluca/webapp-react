@@ -42,6 +42,15 @@ const PostReview = ({ movie_id, fetchMovie }) => {
       >
         <h3 className="mb-4 text-center">Lascia una recensione</h3>
         <form onSubmit={handleSubmit}>
+          {!isFormValide && (
+            <div className="row">
+              <div className="col-12">
+                <div className="alert alert-danger" role="alert">
+                  Tutti i campi sono necessari!
+                </div>
+              </div>
+            </div>
+          )}
           <div className="mb-3">
             <label htmlFor="name" className="form-label">
               Nome
