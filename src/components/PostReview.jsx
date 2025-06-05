@@ -4,6 +4,7 @@ import React, { useState } from "react";
 const PostReview = ({ movie_id, fetchMovie }) => {
   const initialData = { name: "", vote: "", text: "" };
   const [formData, setFormData] = useState(initialData);
+  const [isFormValide, setIsFormValide] = useState(true);
 
   const setFieldValue = (e) => {
     const { name, value } = e.target;
