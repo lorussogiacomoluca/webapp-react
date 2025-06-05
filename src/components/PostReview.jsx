@@ -20,6 +20,10 @@ const PostReview = ({ movie_id, fetchMovie }) => {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (validateForm() === false) {
+      setIsFormValide(false);
+      return;
+    }
     axios
       .post(`http://localhost:3000/api/movies/${movie_id}/review`, formData, {
         headers: { "Content-Type": "application/json" },
