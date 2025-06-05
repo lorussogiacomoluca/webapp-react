@@ -9,7 +9,7 @@ function App() {
 
   return (
     <>
-      <GlobalContext.Provider>
+      <GlobalContext.Provider value={{ isLoading, setIsLoading }}>
         <BrowserRouter>
           <Routes>
             <Route element={<DefaultLayout />}>
