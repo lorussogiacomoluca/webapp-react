@@ -35,7 +35,6 @@ const PostReview = ({ movie_id, fetchMovie }) => {
               Nome
             </label>
             <input
-              required
               type="text"
               className="form-control"
               id="name"
@@ -51,7 +50,6 @@ const PostReview = ({ movie_id, fetchMovie }) => {
               Recensione
             </label>
             <textarea
-              required
               className="form-control"
               id="text"
               name="text"
@@ -69,7 +67,6 @@ const PostReview = ({ movie_id, fetchMovie }) => {
             <select
               className="form-select"
               id="vote"
-              required
               value={formData.vote}
               onChange={setFieldValue}
               name="vote"
