@@ -12,6 +12,7 @@ const DefaultLayout = () => {
       </header>
       <main>
         <div className="container mt-4">
+          {isLoading && <Loader />}
           <Outlet />
         </div>
       </main>
